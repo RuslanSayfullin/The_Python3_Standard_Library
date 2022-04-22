@@ -25,9 +25,12 @@ b = decimal.Decimal('1.234')
 q = PriorityQueue()
 threads = [Multiplier(a, b, i, q) for i in range(1, 6)]
 for t in threads:
-t.start()
+    t.start()
+
 for t in threads:
-t.join()
+    t.join()
+
 for i in range(5):
-prec, value = q.get()
-print('{} {}'.format(prec, value))
+    prec, value = q.get()
+    print('{} {}'.format(prec, value))
+    
