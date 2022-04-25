@@ -16,4 +16,5 @@ for file in FILENAMES:
     print('Mountpoint? :', os.path.ismount(file))
     print('Exists?:', os.path.exists(file))
     print('Link Exists?:', os.path.lexists(file))
-    print(
+    print()
+    
