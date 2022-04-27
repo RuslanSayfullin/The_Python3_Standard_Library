@@ -1,0 +1,16 @@
+import io
+
+# Write to a buffer.
+output = io.StringIO()
+output.write('This goes into the buffer. ')
+print('And so does this.', file=output)
+
+# Retrieve the value written.
+print(output.getvalue())
+output.close()  # Discard buffer memory.
+
+# Initialize a read buffer.
+input = io.StringIO('Inital value for read buffer')
+
+# Read from the buffer.
+print(input.read())
