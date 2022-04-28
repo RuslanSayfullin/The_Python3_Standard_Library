@@ -8,14 +8,14 @@ class Node:
         self.connections = []
 
     def add_edge(self, node):
-        "Create an edge between this node and the other."
+        """Create an edge between this node and the other."""
         self.connections.append(node)
         def __iter__(self):
-        return iter(self.connections)
+            return iter(self.connections)
+
 
 def preorder_traversal(root, seen=None, parent=None):
-    """Generator function to yield the edges in a graph.
-    """
+    """Generator function to yield the edges in a graph."""
     if seen is None:
         seen = set()
     yield (parent, root)
