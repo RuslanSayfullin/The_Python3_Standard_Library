@@ -1,10 +1,13 @@
 import multiprocessing
 
+
 def do_calculation(data):
     return data * 2
 
+
 def start_process():
-print('Starting', multiprocessing.current_process().name)
+    print('Starting', multiprocessing.current_process().name)
+
 
 if __name__ == '__main__':
     inputs = list(range(10))
