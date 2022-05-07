@@ -70,7 +70,7 @@ if __name__ == '__main__':
         request.install_opener(opener)
         # Open the file through a URL.
         resp = request.urlopen(
-        'nfs://remote_server/path/to/the/file.txt'
+            'nfs://remote_server/path/to/the/file.txt'
         )
         print()
         print('READ CONTENTS:', resp.read())
