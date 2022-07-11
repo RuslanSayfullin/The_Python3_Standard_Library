@@ -17,7 +17,8 @@ templatename = 'template.html'          # шаблон для генерируе
 
 try:
     os.mkdir(uploaddir)                 # при необходимости создать каталог для
-except OSError: pass                    # выгружаемых страниц
+except OSError:
+    pass                    # выгружаемых страниц
 
 template = open(templatename).read()    # загрузить или импортировать шаблон
 sitefiles = os.listdir(sitefilesdir)    # имена файлов без пути к ним
