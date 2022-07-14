@@ -27,9 +27,9 @@ class ReplaceVisitor(SearchVisitor):
     def visitmatch(self, fname, text):
         self.changed.append(fname)
         if not self.listOnly:
-        fromStr, toStr = self.context, self.toStr
-        text = text.replace(fromStr, toStr)
-        open(fname, 'w').write(text)
+            fromStr, toStr = self.context, self.toStr
+            text = text.replace(fromStr, toStr)
+            open(fname, 'w').write(text)
 
 
 if __name__ == '__main__':
@@ -40,4 +40,5 @@ if __name__ == '__main__':
         action = 'Changed' if not listonly else 'Found'
         print('Visited %d files' % visitor.fcount)
         print(action, '%d files:' % len(visitor.changed))
-        for fname in visitor.changed: print(fname)
+        for fname in visitor.changed:
+            print(fname)
