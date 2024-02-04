@@ -1,14 +1,10 @@
 #!/usr/bin/env python3
 # encoding: utf-8
-"""
-"""
-
-#end_pymotw_header
 import enum
 
 
 class BugStatus(enum.Enum):
-
+    """Значения элементов, не являющиеся целыми числами"""
     new = {
         'num': 7,
         'transitions': [
