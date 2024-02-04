@@ -9,7 +9,7 @@ import enum
 
 @enum.unique
 class BugStatus(enum.Enum):
-
+    """Уникальность значений перечислений"""
     new = 7
     incomplete = 6
     invalid = 5

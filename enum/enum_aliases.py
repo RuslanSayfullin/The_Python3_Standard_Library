@@ -8,7 +8,7 @@ import enum
 
 
 class BugStatus(enum.Enum):
-
+    """Уникальность значений перечисления"""
     new = 7
     incomplete = 6
     invalid = 5

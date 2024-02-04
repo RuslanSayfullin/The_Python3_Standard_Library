@@ -8,7 +8,7 @@ import enum
 
 
 class BugStatus(enum.Enum):
-
+    """Итерирование по элементам"""
     new = 7
     incomplete = 6
     invalid = 5

@@ -8,7 +8,7 @@ import enum
 
 
 class BugStatus(enum.Enum):
-
+    """Создание перечислении."""
     new = 7
     incomplete = 6
     invalid = 5
