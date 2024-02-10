@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 # encoding: utf-8
-#
-# Copyright (c) 2015 Doug Hellmann.  All rights reserved.
-#
-"""Reading values from a ChainMap
-"""
+
+"""Reading values from a ChainMap. ChainMap: поиск в нескольких словарях"""
 
 #end_pymotw_header
 import collections
