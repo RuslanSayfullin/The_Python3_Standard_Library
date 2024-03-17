@@ -1,0 +1,17 @@
+import collections
+
+print('From the right: ')
+d = collections.deque('abcdefg')
+while True:
+    try:
+        print(d.pop(), end = '')
+    except IndexError:
+        break
+
+print('\nFrom the left: ')
+d2 = collections.deque(range(6))
+while True:
+    try:
+        print(d2.popleft(), end='')
+    except IndexError:
+        break
